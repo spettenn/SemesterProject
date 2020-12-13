@@ -1,0 +1,146 @@
+@import "Styles.css";
+
+.box2 {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #3a3b3c;
+  color: #ffd800;
+  background-image: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 0%;
+  padding-top: 15px;
+  font-size: 1rem;
+}
+.box3 {
+  width: 100%;
+  height: 120rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+#respon{
+  height: 45rem;
+  width: 100%;
+  }
+#responTwo{
+    height: 40rem;
+    width: 100%;
+    }
+.MainCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 32rem;
+  background-color: #3a3b3c;
+}
+.CardImg {
+  width: 100%;
+  height: auto;
+}
+.EventCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25rem;
+  background-color: #3a3b3c;
+  color: white;
+  padding: 0px;
+  line-height: 22px;
+}
+#CardTit {
+  font-size: 1.2rem;
+}
+
+
+@media (min-width: 520px) {
+}
+@media (min-width: 768px) {
+  .box2{
+    font-size: 1.8rem;
+  }
+  .box3 {
+    width: 100%;
+    height: 84rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+  }
+  .MainCard {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 35rem;
+    background-color: #3a3b3c;
+    margin-top: 2rem;
+    border: solid 1px black;
+  }
+  #respon{
+    height: 42rem;
+    width: 45%;
+    }
+  #responTwo{
+      height: 42rem;
+      width: 100%;
+      }
+  .EventCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25rem;
+    background-color: #3a3b3c;
+    color: white;
+    padding: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .box2 {
+    height: 2.5rem;
+    width: 100%;
+    background-color: #3a3b3c;
+    color: #ffd800;
+    background-image: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    padding-top: 15px;
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  .box3 {
+    width: 100%;
+    height: 55rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .MainCard {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 35rem;
+    background-color: #3a3b3c;
+    margin-top: 2rem;
+    border: solid 1px black;
+  }
+  #respon{
+    height: 35rem;
+    width: 30%;
+    }
+  #responTwo{
+      height: 42rem;
+      width: 100%;
+      }
+}

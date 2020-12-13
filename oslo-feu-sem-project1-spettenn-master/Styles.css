@@ -1,0 +1,516 @@
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  border: none;
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Teko:wght@500&display=swap");
+body {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box5"
+    "footer";
+}
+
+/* Header / Navigation code */
+.box1 {
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #110c2f;
+}
+.Navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0%;
+  z-index: 0;
+  position: relative;
+  padding-right: 35px;
+}
+.NavDesktop {
+  display: none;
+}
+#hamburger-menu {
+  display: none;
+}
+nav {
+  display: none;
+}
+#hamburger-menu:checked ~ nav {
+  display: block;
+  background-color: #110c2f;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  list-style: none;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 5;
+  text-decoration: none;
+  margin-top: 2.3rem;
+}
+
+.burger {
+  color: #ffd800;
+  margin-top: 4px;
+  margin-left: 0px;
+  z-index: 5;
+  position: absolute;
+}
+.filler {
+  width: 100%;
+}
+.buttonnav {
+  background-color: #110c2f;
+  color: #ffd800;
+  font-size: 2rem;
+  border: none;
+  display: block;
+  text-decoration: none;
+}
+.Description {
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.RonaButton {
+  color: #ffd800;
+  background-color: #110c2f;
+  border: 1px solid #ffd800;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.RonaButton:hover {
+  background-color: #ffd800;
+  color: #110c2f;
+  border: #110c2f;
+}
+h1 {
+  font-size: 2rem;
+  color: #ffd800;
+}
+a {
+  color: inherit;
+}
+#HeaderTit {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ffd800;
+  margin-top: 5px;
+}
+.LogoDiv {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+}
+.Logo {
+  width: 100%;
+  height: 2.5rem;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.LogoEdit {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+/* Hero Image & information conent */
+.box2 {
+  height: 33rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/BcgImgvert.png");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.Filler {
+  width: 100%;
+  height: 8rem;
+}
+h2 {
+  font-size: 2rem;
+  color: #ffd800;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Audiowide";
+}
+.HeroText {
+  color: #ffd800;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 1.5rem;
+  font-family: "Teko", sans-serif;
+}
+
+/* Information cards */
+.box3 {
+  width: 100%;
+  height: 90rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #110c2f;
+}
+h3 {
+  color: #ffd800;
+  font-size: 1.8rem;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  font-family: menlo Normal;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.CardText {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  line-height: 28px;
+}
+.CardImg {
+  width: 90%;
+  height: 70%;
+}
+/* Filler box with background image */
+
+.HeroImgTwo {
+  width: 100%;
+  height: 8rem;
+}
+.Bimg {
+  width: fit-content;
+  height: auto;
+}
+.icon {
+  display: none;
+}
+/* Information cards */
+.box5 {
+  width: 100%;
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #3a3b3c;
+  margin-top: -12rem;
+}
+/* Footer */
+.footer {
+  background-color: #3a3b3c;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  bottom: 0;
+}
+.FooterLogo {
+  display: none;
+}
+.FooterTit {
+  color: #ffd800;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.FooterText {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+#Club {
+  visibility: hidden;
+}
+
+/* responsive for smaller tablets larger phones */
+@media (min-width: 520px) {
+}
+
+/* Responsive queries for tablet */
+@media (min-width: 768px) {
+  .box2 {
+    height: 33rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/BckGrndImg2.png");
+  }
+  .box3 {
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #110c2f;
+  }
+  .RonaButton {
+    font-size: 1.5rem;
+  }
+  .NavRef {
+    text-decoration: none;
+    color: #ffd800;
+    margin-left: 5px;
+  }
+  .box3 {
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #110c2f;
+  }
+
+  .HeroText {
+    color: #ffd800;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 1.5rem;
+  }
+  .icon {
+    margin-left: 47%;
+    margin-top: 1%;
+  }
+  .box3 {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #110c2f;
+  }
+  .box5 {
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #3a3b3c;
+  }
+  .footer {
+    background-color: #3a3b3c;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+  }
+  #Club {
+    visibility: hidden;
+  }
+}
+/* Responsive queries for Larger tablets */
+@media (min-width: 992px) {
+  .box1 {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #110c2f;
+  }
+  .Logo {
+    padding-top: 8px;
+  }
+  .box3 {
+    width: 100%;
+    height: 33rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #110c2f;
+  }
+  .box5 {
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3a3b3c;
+  }
+  .NavDesktop {
+    font-size: 2rem;
+  }
+  .burger {
+    display: none;
+  }
+  .buttonnav {
+    display: none;
+  }
+  .Navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .NavDesktop {
+    display: inline-block;
+    color: #ffd800;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    margin-top: 0.8rem;
+    z-index: 5;
+    overflow: hidden;
+    position: absolute;
+  }
+  #HeaderTit {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #ffd800;
+    margin-top: 5px;
+  }
+  .NavRef {
+    text-decoration: none;
+    color: #ffd800;
+    margin-left: 10px;
+  }
+  .Logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #Club {
+    visibility: visible;
+    color: #ffd800;
+    border: 1px solid #ffd800;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 2px;
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+  }
+  #Club:hover {
+    background-color: #ffd800;
+    color: #110c2f;
+    border: #110c2f;
+  }
+  .CardText {
+    color: white;
+    font-size: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    line-height: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer {
+    background-color: #3a3b3c;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* Responsive queries for smaller desktop */
+@media (min-width: 1200px) {
+  .box2 {
+    height: 33rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/HeroImgOne.png");
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  }
+  .box3 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #110c2f;
+  }
+
+  .box5 {
+    width: 100%;
+    height: 32rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3a3b3c;
+  }
+  .burger {
+    display: none;
+  }
+  .buttonnav {
+    display: none;
+  }
+  .Navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .NavDesktop {
+    color: #ffd800;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    z-index: 5;
+    overflow: hidden;
+  }
+  h1 {
+    margin-top: 5px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .HeroText {
+    font-size: 2rem;
+  }
+  .HeroImgTwo {
+    width: fit-content;
+    height: auto;
+  }
+  .icon {
+    margin-left: 48.7%;
+    margin-top: 0.3%;
+  }
+  .CardText {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    line-height: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .HomeCard {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer {
+    background-color: #3a3b3c;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid;
+  }
+  .FooterLogo {
+    display: flex;
+    margin-top: 1px;
+  }
+}
+
+/* Responsive queries for desktops */

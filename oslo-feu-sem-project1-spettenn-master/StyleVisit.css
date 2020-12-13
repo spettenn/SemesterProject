@@ -1,0 +1,180 @@
+@import "Styles.css";
+
+.box2 {
+  height: 2rem;
+  width: 100%;
+  background-color: #3a3b3c;
+  color: #ffd800;
+  background-image: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 0%;
+  padding-top: 15px;
+  font-size: 1rem;
+  border-bottom: 1px solid #ffd800;
+}
+.box3 {
+  height: 68rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+.Info {
+  width: 100%;
+  height: 38rem;
+  background-color: #3a3b3c;
+  color: #ffd800;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 1rem;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.ContactTit {
+  font-size: 1.2rem;
+}
+.DirectInfo {
+  margin-top: 5px;
+}
+#SoMe {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.Time {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.OpeningTimesTit {
+  color: black;
+}
+.OpeningTimes {
+  color: black;
+  font-size: 1.3rem;
+}
+#RonaBtn {
+  font-size: 1.5rem;
+  text-align: center;
+  height: 2rem;
+  width: 14rem;
+  margin-left: 40px;
+  margin-top: 10px;
+  background-color: #110c2f;
+  color: #ffd800;
+  border: 2px solid #ffd800;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .box2 {
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+  }
+  .box3 {
+    height: 62rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+  }
+  #SoMe {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .box3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+  }
+  .Info {
+    width: 100%;
+    height: 100%;
+  }
+  .Time {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box2 {
+    font-size: 2rem;
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
+  .box3 {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+  }
+  .Info {
+    width: 100%;
+    height: 100%;
+    background-color: #3a3b3c;
+    color: #ffd800;
+    display: flex;
+    flex-direction: column;
+  }
+  .Time {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  #ContactTit {
+    font-size: 2rem;
+  }
+  #OpeningTimesTit {
+    font-size: 2rem;
+  }
+  #RonaBtn {
+    font-size: 2rem;
+    width: 20rem;
+    height: 3rem;
+    padding-top: 10px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .footer {
+    border-top: none;
+  }
+}

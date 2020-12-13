@@ -1,0 +1,239 @@
+@import "Style.css";
+
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#One {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Img/RonaBgFinal.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+}
+#Two {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.HeroTextOne {
+  margin-top: -3rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: black;
+  font-family: cursive;
+  text-shadow: black;
+}
+.HeroTextTwo {
+  margin-top: 25rem;
+  font-size: 1.3rem;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+a {
+  color: inherit;
+}
+.ScrollBtn {
+  height: 3.5rem;
+  width: 3rem;
+  position: absolute;
+  border: 2px black solid;
+  border-radius: 8px;
+  justify-content: center;
+  z-index: 5;
+  margin-top: 10px;
+  margin-left: -1.8rem;
+  padding-left: 5px;
+  padding-top: 4px;
+  padding-bottom: -5px;
+  text-decoration: none;
+  background-color: transparent;
+}
+.Cards {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.RonaCard {
+  width: 45%;
+  height: 80vh;
+  background-color: #3a3b3c;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  color: #ffd800;
+}
+p {
+  margin: 20px;
+  font-size: 1.3rem;
+  color: rgb(240, 233, 233);
+}
+#txt {
+  font-size: 1.2rem;
+}
+.ImgCard {
+  margin: 20px;
+}
+.Home {
+  height: 2rem;
+  width: 10rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  background-color: #110c2f;
+}
+.home:hover {
+  background-color: white;
+  color: #110c2f;
+  border: #110c2f;
+}
+
+@media (max-width: 768px) {
+  #Two {
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .Cards {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100rem;
+  }
+  .ImgCard {
+    width: 80%;
+  }
+  .home {
+    margin-top: 20px;
+  }
+  .RonaCard {
+    width: 100%;
+    height: 40rem;
+    background-color: #3a3b3c;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+    padding: 0%;
+    align-items: center;
+  }
+}
+@media (max-width: 520px) {
+  .HeroTextOne {
+    margin-top: -3rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: black;
+    font-family: cursive;
+    text-shadow: black;
+  }
+  .HeroTextTwo {
+    margin-top: 15rem;
+    font-size: 0.7rem;
+  }
+  .ImgCard {
+    margin: 20px;
+    height: 100%;
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  .ScrollBtn {
+    height: 3.5rem;
+    width: 3rem;
+    position: absolute;
+    border: 2px black solid;
+    border-radius: 8px;
+    justify-content: center;
+    z-index: 5;
+    margin-top: 10px;
+    margin-left: -1rem;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: -5px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  #Two {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .Cards {
+    height: 70rem;
+    margin: 0%;
+    justify-content: space-around;
+  }
+  .RonaCard {
+    width: 100%;
+    height: 90rem;
+    background-color: #3a3b3c;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0px;
+    justify-content: space-around;
+    padding: 0%;
+    align-items: center;
+  }
+  .ImgCard {
+    margin: 0px;
+    height: 12rem;
+  }
+  .Home {
+    height: 2.5rem;
+    width: 10rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    background-color: #110c2f;
+    margin-top: 0rem;
+    z-index: 5;
+  }
+}
